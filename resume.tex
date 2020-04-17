@@ -1,0 +1,174 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Configuration
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Themes: Awesome-CV
+\documentclass[]{awesome-cv}
+\usepackage{textcomp}
+%%% Override a directory location for fonts(default: 'fonts/')
+\fontdir[fonts/]
+
+%%% Configure a directory location for sections
+\newcommand*{\sectiondir}{resume/}
+
+%%% Override color
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+%% Color for highlight
+% Define your custom color if you don't like awesome colors
+\colorlet{awesome}{awesome-red}
+%\definecolor{awesome}{HTML}{CA63A8}
+%% Colors for text
+%\definecolor{darktext}{HTML}{414141}
+%\definecolor{text}{HTML}{414141}
+%\definecolor{graytext}{HTML}{414141}
+%\definecolor{lighttext}{HTML}{414141}
+
+%%% Override a separator for social informations in header(default: ' | ')
+%\headersocialsep[\quad\textbar\quad]
+    \begin{document}
+    
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Profile
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{center}
+	\headerfirstnamestyle{Steven} \headerlastnamestyle{Steiner} \\
+	\vspace{2mm}
+	{\faEnvelope\ sisteine@ucsd.edu} | {\faMobile\ (310) 922-6205} | {\faMapMarker\ La Jolla, CA} | {\faLink\ github.com/steets250}
+\end{center}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Education
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cvsection{Education}
+\begin{cventries}
+	\cventry
+	{BS in Computer Science}
+	{University of California, San Diego}
+	{La Jolla, CA}
+	{Sep 2018 – Jun 2022}
+	{GPA: 3.7}
+\end{cventries}
+
+\vspace{-2mm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Experience
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cvsection{Experience}
+\begin{cventries}
+	\cventry
+	{Front-End Developer}
+	{IntElect}
+	{La Jolla, CA}
+	{March 2020 – Present}
+	{\begin{cvitems}
+		\item {Developing education recommendation website using React and deploying using Heroku.}
+		\item {Collaborating with other programmers using Github.}
+		\end{cvitems}}
+	\cventry
+	{File Clerk}
+	{Lurie, Zepeda, et al.}
+	{Century City, CA}
+	{July 2019 – September 2019}
+	{\begin{cvitems}
+		\item {Processed, scanned, and distributed legal documents and daily briefings for law staff.}
+		\item {Sorted case files and labeled documents to be added to case archives.}
+		\item {Assisted staff with client communication and general office tasks.}
+		\end{cvitems}}
+	\cventry
+	{Freelance}
+	{Technical Support}
+	{Los Angeles, CA}
+	{September 2014 – Present}
+	{\begin{cvitems}
+		\item {Providing tech support to individuals and small businesses.}
+		\item {Guiding customers to navigate and operate household technologies.}
+		\item {Helped to develop and manage sales platform for an athletic clothing store.}
+		\end{cvitems}}
+	\vspace{-5mm}
+\end{cventries}
+
+\cvsection{Projects}
+\begin{cventries}
+	\cventry
+	{Triton XR Team Project}
+	{Endeavor}
+	{Oculus Quest, Unity, C\#}
+	{github.com/TritonXR/Endeavor}
+	{\begin{cvitems}
+		\item {Puzzle game exploring the capabilities of virtual reality.}
+		\item {Teaches the player about interacting with the digital environment.}
+		\item {Created using the Unity engine, with scripts programmed in C\#.}
+		\end{cvitems}}
+	\cventry
+	{Independent Project}
+	{Venice High App}
+	{Xcode, Swift}
+	{iPhone App Store: \textquotedbl{}Venice High\textquotedbl{}}
+	{\begin{cvitems}
+		\item {Developed mobile app containing pertinent information for high school students, parents, and staff.}
+		\item {Responded to feedback and continually adapted the program to meet user requests.}
+		\item {Utilized basic version control on Github to track version releases.}
+		\end{cvitems}}
+	\cventry
+	{Independent Project}
+	{Ring Home Automation Plugin}
+	{Lua}
+	{github.com/steets250/vera-ring}
+	{\begin{cvitems}
+		\item {Plugin for Vera home automation controllers to interface with Ring security devices.}
+		\item {Ported and refactored existing Javascript API to Lua.}
+		\item {Allows doorbell and light status to be monitored and controlled using Ring\textquotesingle{}s API.}
+		\end{cvitems}}
+	\vspace{-5mm}
+\end{cventries}
+
+\cvsection{Awards}
+\begin{cvhonors}
+	\cvhonor
+	{Student of the Year}
+	{Awarded in the engineering design pathway for outstanding senior project.}
+	{LAUSD CTE}
+	{2018}
+	\cvhonor
+	{Life Scout}
+	{Achieved second-highest rank in scouting.}
+	{Boy Scouts}
+	{2017}
+	\cvhonor
+	{Letter of Commendation}
+	{Recognized for academic potential in standardized testing.}
+	{NMSQT}
+	{2016}
+\end{cvhonors}
+
+\cvsection{Skills}
+\begin{cventries}
+	\cventry
+	{}
+	{\def\arraystretch{1.15}{\begin{tabular}{ l l }
+		Programming Languages:  & {\skill{ Java, Swift, C, Javascript, HTML/CSS, C\#, ARM}} \\
+		 \\
+		Frameworks/Softwares:  & {\skill{ Git/GitHub, Xcode, Node.js, React, Npm/Yarn, Unity}} \\
+		\end{tabular}}}
+	{}
+	{}
+	{}
+\end{cventries}
+\vspace{-7mm}
+\ 
+\end{document}
